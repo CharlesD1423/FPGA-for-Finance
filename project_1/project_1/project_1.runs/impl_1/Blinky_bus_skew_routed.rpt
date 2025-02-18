@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Tue Feb 18 18:21:27 2025
+| Host         : ECE-XILVIV23C10 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file Blinky_bus_skew_routed.rpt -pb Blinky_bus_skew_routed.pb -rpx Blinky_bus_skew_routed.rpx
+| Design       : Blinky
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

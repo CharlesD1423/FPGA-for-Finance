@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Tue Feb 18 18:18:21 2025
+# Process ID: 6036
+# Current directory: C:/Users/aavila33/Downloads/project_1/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log Blinky.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Blinky.tcl
+# Log file: C:/Users/aavila33/Downloads/project_1/project_1/project_1.runs/synth_1/Blinky.vds
+# Journal file: C:/Users/aavila33/Downloads/project_1/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: ECE-XILVIV23C10, OS: Windows, CPU Frequency: 2594 MHz, CPU Physical cores: 4, Host memory: 12879 MB
+#-----------------------------------------------------------
+source Blinky.tcl -notrace
