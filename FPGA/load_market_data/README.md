@@ -7,7 +7,7 @@
 - In "Port A Options", set Port A Width to 16, and Port A Depth to 1024.
 - In the "Other Options" tab, select "Load Init File", and specify the location of the aapl_prices.coe file in src directory (from this repo).
 - It might ask to generate output products -- hit Yes.
-- I renamed it to prices_rom, so you will need to verify this in the project output.
+- I renamed this block to prices_rom (you can see it being instantiated in top.vhd), so you will need to verify this in the project output if you write another name.
 
 ## Load an ILA IP
 - Search for ILA, or Integrated Logic Analyzer in the IP Catalog and double click.
