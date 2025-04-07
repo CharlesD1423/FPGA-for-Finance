@@ -1,5 +1,8 @@
 # Instructions for loading project:
 
+## Create a new project.
+- Don't add sources/constraints, do it manually in steps below.
+
 ## Create a Block Memory (ROM)
 - In Vivado, create a new project
 - In IP Catalog, search for Block Memory Generator and double click
@@ -27,3 +30,4 @@
 - Click Program Device
 - Make sure .but and .ltx files are selected in this window, then hit OK.
 - Open ILA Dashboard once programmed, and you can now view it running in memory.
+- When hitting "Run", you can see the ROM stepping through prices live in hardware
