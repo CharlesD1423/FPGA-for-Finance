@@ -7,7 +7,7 @@ entity trade_core is
     i_clk       : in std_logic;
     i_rst       : in std_logic;
     i_price     : in unsigned(15 downto 0);
-    o_mvg_avg   : out unsigned(32 downto 0);
+    o_mvg_avg   : out unsigned(31 downto 0);
     o_buy_sell  : out std_logic;
     o_N         : out unsigned(15 downto 0);
     o_ready     : out std_logic
@@ -26,8 +26,8 @@ architecture Behavioral of trade_core is
     signal price_mem : price_array; -- use a clean name, not "buffer"
     signal price_idx : integer range 0 to N-1 := 0; -- points to where to write
 
-    signal sum : unsigned(32 downto 0) := (others => '0');
-    signal m_avg : unsigned(32 downto 0) := (others => '0');
+    signal sum : unsigned(31 downto 0) := (others => '0');
+    signal m_avg : unsigned(31 downto 0) := (others => '0');
 
     signal num_calc : unsigned(15 downto 0) := (others => '0');
     signal last_price : unsigned(15 downto 0) := (others => '0');
@@ -79,14 +79,14 @@ begin
                         -- Only calculate average once at least 8 samples collected
                         if num_calc >= to_unsigned(N, num_calc'length) then
                             -- Sum all prices
-                            sum <= resize(price_mem(0), 33) +
-                                   resize(price_mem(1), 33) +
-                                   resize(price_mem(2), 33) +
-                                   resize(price_mem(3), 33) +
-                                   resize(price_mem(4), 33) +
-                                   resize(price_mem(5), 33) +
-                                   resize(price_mem(6), 33) +
-                                   resize(price_mem(7), 33);
+                            sum <= resize(price_mem(0), 32) +
+                                   resize(price_mem(1), 32) +
+                                   resize(price_mem(2), 32) +
+                                   resize(price_mem(3), 32) +
+                                   resize(price_mem(4), 32) +
+                                   resize(price_mem(5), 32) +
+                                   resize(price_mem(6), 32) +
+                                   resize(price_mem(7), 32);
 
                             -- Moving average is sum / 8
                             m_avg <= shift_right(sum, SHIFT);
